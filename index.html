@@ -18,10 +18,22 @@
             width: 200px;
             height: 200px;
             background-color: #2563eb;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .square.red {
+            background-color: #dc2626;
         }
     </style>
 </head>
 <body>
     <div class="square"></div>
+    <script>
+        const square = document.querySelector('.square');
+        square.addEventListener('click', function() {
+            square.classList.add('red');
+        });
+    </script>
 </body>
 </html>
